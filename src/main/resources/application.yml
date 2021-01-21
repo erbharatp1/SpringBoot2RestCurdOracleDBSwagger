@@ -1,0 +1,16 @@
+server:
+  port: 2021
+  servlet:
+    context-path: /product-curd-app
+
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: system
+    password: system
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
