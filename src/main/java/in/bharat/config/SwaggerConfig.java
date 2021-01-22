@@ -2,12 +2,9 @@ package in.bharat.config;
 
 import static springfox.documentation.builders.PathSelectors.regex;
 import static  springfox.documentation.builders.RequestHandlerSelectors.basePackage;
-
 import java.util.ArrayList;
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
 import springfox.documentation.service.ApiInfo;
 import springfox.documentation.service.Contact;
 import springfox.documentation.service.VendorExtension;
@@ -39,13 +36,13 @@ public class SwaggerConfig {
 		;
 	}
 
-	@SuppressWarnings("rawtypes")
+
 	private ApiInfo apiInfo() {
 		return new ApiInfo(
 				"WELCOME TO SPRING BOOT CURD OPERATION WITH ORACLE DB APP",
 				"This is used to Test Application only",
 				"R-3.5 GA", "https://oracle.com/",
-				new Contact("NIT", "https://oracle.com", "erbharatpatelp@gmail.com"),
+				new Contact("oracle", "https://oracle.com", "erbharatpatelp@gmail.com"),
 				"Oracle Corp Licence", "https://oracle.com", new ArrayList<VendorExtension>());
 	}
 
