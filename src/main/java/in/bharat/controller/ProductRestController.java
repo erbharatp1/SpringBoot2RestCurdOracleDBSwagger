@@ -25,7 +25,6 @@ import in.bharat.service.IProductService;
  */
 @RestController
 @RequestMapping("/rest/product")
-@CrossOrigin(origins = "http://localhost:4200")
 public class ProductRestController {
 
   private static final Logger logger = LoggerFactory.getLogger(ProductRestController.class);
